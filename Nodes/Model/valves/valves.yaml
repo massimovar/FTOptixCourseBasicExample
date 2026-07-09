@@ -1,0 +1,76 @@
+Name: valves
+Id: g=d7a2b3c7e1b0efa4743d83359414b0c6
+Type: FolderType
+Children:
+- Name: valve1
+  Id: g=798d90640203c2746fbee9a92a9ebeaa
+  Type: valve
+  Children:
+  - Name: on
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: temperature
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 10.0
+  - Name: section
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+- Name: valve2
+  Id: g=7356cd262146a00b1e691ac81cf5dd6b
+  Type: valve
+  Children:
+  - Name: on
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: temperature
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: section
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+- Name: valve3
+  Id: g=6f42b961a253cb3c974de1ca18723369
+  Type: valve
+  Children:
+  - Name: on
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: temperature
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: section
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+- Name: valve4
+  Id: g=37d30654de64012018b403b0a2183cd0
+  Type: valve
+  Children:
+  - Name: on
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: temperature
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: section
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+- Name: valve5
+  Id: g=8e4baa97e4080f79af63fa76dbdce95e
+  Type: valve
+  Children:
+  - Name: on
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: temperature
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: section
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"

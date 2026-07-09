@@ -1,0 +1,14 @@
+Name: TagImporter
+Type: S7TiaProfinetTagImporter
+OwnerId: ns=2;g=766e4b756df9547fc2443c88ae5843e3
+Children:
+- Name: IgnoredPLCItems
+  Type: BaseDataVariableType
+  DataType: BaseDataType
+  ValueRank: OneDimension
+  ArrayDimensions: [0]
+- Name: IgnoredHMIItems
+  Type: BaseDataVariableType
+  DataType: NodeId
+  ValueRank: OneDimension
+  ArrayDimensions: [0]

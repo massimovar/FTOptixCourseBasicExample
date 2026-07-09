@@ -304,7 +304,7 @@ Children:
           - Name: Panel
             Type: NodePointer
             DataType: NodeId
-            Value: "/Objects/FTOptixCourseBasicExample/UI/Screens/Settings"
+            Value: "/Objects/FTOptixCourseBasicExample/UI/Screens/Aliasing"
             Children:
             - Name: Kind
               Type: PropertyType
@@ -554,3 +554,4 @@ Children:
     Value: 3
 - File: Screens/Screens.yaml
 - File: Keyboards/Keyboards.yaml
+- File: widgets/widgets.yaml

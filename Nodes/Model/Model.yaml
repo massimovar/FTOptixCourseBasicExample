@@ -11,3 +11,19 @@ Children:
 - Name: result
   Type: BaseDataVariableType
   DataType: Int32
+- File: Motors/Motors.yaml
+- File: valves/valves.yaml
+- Name: valve
+  Id: g=98ff7376947aaa1a7a16b0dc121a38f3
+  Supertype: BaseObjectType
+  Children:
+  - Name: on
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: temperature
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: section
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
