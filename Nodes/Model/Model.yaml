@@ -27,3 +27,123 @@ Children:
     Type: BaseDataVariableType
     DataType: String
     Value: "0"
+- Name: Variable3
+  Type: BaseDataVariableType
+  DataType: Int32
+- Name: Variable4
+  Id: g=19898df95236d3dd692653a1145f8697
+  Type: BaseDataVariableType
+  DataType: Int32
+- Name: Variable3Changed
+  Type: VariableChangedEventDispatcher
+  Children:
+  - Name: VariableNodePath
+    Type: BaseVariableType
+    DataType: NodePath
+    Value: "../Variable3"
+  - Name: VariableValueChangedEventHandler1
+    Type: EventHandler
+    Children:
+    - Name: ListenEventType
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Types/EventTypes/BaseEventType/VariableConditionEvent/VariableValueChangedEvent"
+    - Name: MethodsToCall
+      Type: BaseObjectType
+      Children:
+      - Name: MethodContainer1
+        Type: BaseObjectType
+        Children:
+        - Name: ns=2;ObjectPointer
+          Type: NodePointer
+          DataType: NodeId
+          Children:
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+            Value: "/Types/ObjectTypes/BaseObjectType"
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../../../../Commands/VariableCommands@NodeId"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              Value: 2
+        - Name: ns=2;Method
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Increment"
+        - Name: InputArguments
+          Type: BaseObjectType
+          Children:
+          - Name: VariableToModify
+            Type: BaseDataVariableType
+            DataType: VariablePointer
+            Description: {"NamespaceIndex":2,"TextId":"IncrementVariableToModifyDescription"}
+            Value: "/Objects/FTOptixCourseBasicExample/Model/Variable4"
+          - Name: Delta
+            Type: BaseDataVariableType
+            DataType: Float
+            Description: {"NamespaceIndex":2,"TextId":"IncrementDeltaDescription"}
+            Value: 1.0
+          - Name: ArrayIndex
+            Type: BaseDataVariableType
+            DataType: UInt32
+            Description: {"NamespaceIndex":2,"TextId":"IncrementArrayIndexDescription"}
+            ValueRank: ScalarOrOneDimension
+    - Name: EventArguments
+      Type: VariableValueChangedEvent
+      Children:
+      - Name: VariableNodeId
+        Type: BaseVariableType
+        DataType: NodeId
+      - Name: NewValue
+        Type: BaseVariableType
+        DataType: BaseDataType
+      - Name: OldValue
+        Type: BaseVariableType
+        DataType: BaseDataType
+      - Name: EventId
+        Type: PropertyType
+        DataType: ByteString
+      - Name: EventType
+        Type: PropertyType
+        DataType: NodeId
+      - Name: SourceNode
+        Type: PropertyType
+        DataType: NodeId
+      - Name: SourceName
+        Type: PropertyType
+        DataType: String
+      - Name: Time
+        Type: PropertyType
+        DataType: UtcTime
+      - Name: ReceiveTime
+        Type: PropertyType
+        DataType: UtcTime
+      - Name: Message
+        Type: PropertyType
+        DataType: LocalizedText
+      - Name: Severity
+        Type: PropertyType
+        DataType: UInt16
+- Name: Variable5
+  Type: BaseDataVariableType
+  DataType: Boolean
+- Name: Variable5Transitioned
+  Id: g=76a9bfd66e5ba2d06cbfb1d3f765adb5
+  Type: VariableTransitionEventDispatcher
+  Children:
+  - Name: Value
+    Type: BaseVariableType
+    DataType: Double
+    Value: 1.0
+  - Name: Transition
+    Type: BaseVariableType
+    DataType: VariableTransition
+  - Name: VariableNodePath
+    Type: BaseVariableType
+    DataType: NodePath
+    Value: "../Variable5"
