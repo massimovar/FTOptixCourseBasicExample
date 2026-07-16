@@ -1,0 +1,473 @@
+Name: OPCUAClient1
+Id: g=b0560409ffeaf6e1516d3c2b8716f95c
+Type: OPCUAClient
+Children:
+- Name: ServerEndpointURL
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "opc.tcp://10.75.0.231:4840"
+- Name: MinimumMessageSecurityMode
+  Type: BaseDataVariableType
+  DataType: ns=25;MessageSecurityModeEnum
+  Value: 2
+- Name: MinimumSecurityPolicy
+  Type: BaseDataVariableType
+  DataType: ns=25;SecurityPolicyEnum
+  Value: 3
+- Name: UserIdentityType
+  Type: BaseDataVariableType
+  DataType: UserIdentityTypeEnum
+  Value: 1
+- Name: ConnectionStatus
+  Type: BaseDataVariableType
+  DataType: ConnectionStatusEnum
+  AccessLevel: Read
+- Name: ServerUri
+  Type: BaseDataVariableType
+  DataType: String
+  AccessLevel: Read
+- Name: Events
+  Type: BaseDataVariableType
+  DataType: EventsEnum
+  Value: 1
+- Name: RuntimeConfigurations
+  Type: BaseObjectType
+- Class: Reference
+  Target: ns=25;i=8
+  Direction: Forward
+- Class: Reference
+  Target: ns=25;i=9
+  Direction: Forward
+- Class: Reference
+  Target: ns=25;i=54
+  Direction: Forward
+- Class: Reference
+  Target: ns=25;i=57
+  Direction: Forward
+- Class: Reference
+  Target: ns=25;i=91
+  Direction: Forward
+- Class: Reference
+  Target: ns=25;i=60
+  Direction: Forward
+- Class: Reference
+  Target: ns=25;i=63
+  Direction: Forward
+- Class: Reference
+  Target: ns=25;i=83
+  Direction: Forward
+- Class: Reference
+  Target: ns=25;i=75
+  Direction: Forward
+- Name: VerifyServerIdentity
+  Type: BaseDataVariableType
+  DataType: Boolean
+- Name: Objects
+  Type: BaseObjectType
+  Children:
+  - Name: 'ns=28;-CPU_TP120_DP'
+    Id: ns=28;s=PLC
+    Type: SimaticDeviceType
+    DisplayName: {"LocaleId":"","Text":"-CPU_TP120_DP"}
+    Description: {"LocaleId":"","Text":"The PLC instance which supports you with OPC UA functionality"}
+    Children:
+    - Name: Memory
+      Id: ns=28;s=Memory
+      Type: FunctionalGroupType
+      DisplayName: {"LocaleId":"","Text":"Memory"}
+      Description: {"LocaleId":"","Text":"Holding all global memory (bit, byte, words, ...)."}
+      Children:
+      - Name: ns=28;M 255.0
+        Id: 'ns=28;s="M 255.0"'
+        Type: BaseDataVariableType
+        DataType: Boolean
+        DisplayName: {"LocaleId":"","Text":"M 255.0"}
+        ReferenceType: Organizes
+      - Name: ns=28;M 255.1
+        Id: 'ns=28;s="M 255.1"'
+        Type: BaseDataVariableType
+        DataType: Boolean
+        DisplayName: {"LocaleId":"","Text":"M 255.1"}
+        ReferenceType: Organizes
+  - Class: DataType
+    Name: SimaticOperatingState
+    Id: ns=28;i=3063
+    Supertype: Enumeration
+    EnumDefinition: 
+     {
+      "Name": "SimaticOperatingState",
+      "DataType": {
+       "Id": 3063,
+       "Namespace": 28
+      },
+      "Fields": [{
+        "Name": "NotSupported",
+        "Value": 0,
+        "DisplayName": {
+         "LocaleId": "",
+         "Text": "NotSupported"
+        }
+       },{
+        "Name": "StopFwUpdate",
+        "Value": 1,
+        "DisplayName": {
+         "LocaleId": "",
+         "Text": "StopFwUpdate"
+        }
+       },{
+        "Name": "StopSelfInitialization",
+        "Value": 3,
+        "DisplayName": {
+         "LocaleId": "",
+         "Text": "StopSelfInitialization"
+        }
+       },{
+        "Name": "Stop",
+        "Value": 4,
+        "DisplayName": {
+         "LocaleId": "",
+         "Text": "Stop"
+        }
+       },{
+        "Name": "Startup",
+        "Value": 6,
+        "DisplayName": {
+         "LocaleId": "",
+         "Text": "Startup"
+        }
+       },{
+        "Name": "Run",
+        "Value": 8,
+        "DisplayName": {
+         "LocaleId": "",
+         "Text": "Run"
+        }
+       },{
+        "Name": "RunRedundant",
+        "Value": 9,
+        "DisplayName": {
+         "LocaleId": "",
+         "Text": "RunRedundant"
+        }
+       },{
+        "Name": "Halt",
+        "Value": 10,
+        "DisplayName": {
+         "LocaleId": "",
+         "Text": "Halt"
+        }
+       },{
+        "Name": "LinkUpClassic",
+        "Value": 11,
+        "DisplayName": {
+         "LocaleId": "",
+         "Text": "LinkUpClassic"
+        }
+       },{
+        "Name": "UpdateClassic",
+        "Value": 12,
+        "DisplayName": {
+         "LocaleId": "",
+         "Text": "UpdateClassic"
+        }
+       },{
+        "Name": "Defective",
+        "Value": 13,
+        "DisplayName": {
+         "LocaleId": "",
+         "Text": "Defective"
+        }
+       },{
+        "Name": "ErrorSearch",
+        "Value": 14,
+        "DisplayName": {
+         "LocaleId": "",
+         "Text": "ErrorSearch"
+        }
+       },{
+        "Name": "NoPower",
+        "Value": 15,
+        "DisplayName": {
+         "LocaleId": "",
+         "Text": "NoPower"
+        }
+       },{
+        "Name": "CiR",
+        "Value": 16,
+        "DisplayName": {
+         "LocaleId": "",
+         "Text": "CiR"
+        }
+       },{
+        "Name": "STOPwithoutODIS",
+        "Value": 17,
+        "DisplayName": {
+         "LocaleId": "",
+         "Text": "STOPwithoutODIS"
+        }
+       },{
+        "Name": "RunODIS",
+        "Value": 18,
+        "DisplayName": {
+         "LocaleId": "",
+         "Text": "RunODIS"
+        }
+       },{
+        "Name": "PgmTest",
+        "Value": 19,
+        "DisplayName": {
+         "LocaleId": "",
+         "Text": "PgmTest"
+        }
+       },{
+        "Name": "RunPgmTest",
+        "Value": 20,
+        "DisplayName": {
+         "LocaleId": "",
+         "Text": "RunPgmTest"
+        }
+       },{
+        "Name": "RunSyncUp",
+        "Value": 21,
+        "DisplayName": {
+         "LocaleId": "",
+         "Text": "RunSyncUp"
+        }
+       },{
+        "Name": "SyncUp",
+        "Value": 22,
+        "DisplayName": {
+         "LocaleId": "",
+         "Text": "SyncUp"
+        }
+       },{
+        "Name": "RemoteUnknown",
+        "Value": 31,
+        "DisplayName": {
+         "LocaleId": "",
+         "Text": "RemoteUnknown"
+        }
+       }]
+     }
+    DisplayName: {"LocaleId":"","Text":"SimaticOperatingState"}
+    Children:
+    - Name: ns=0;EnumValues
+      Id: ns=28;i=6083
+      Type: PropertyType
+      DataType: EnumValueType
+      DisplayName: {"LocaleId":"","Text":"EnumValues"}
+      ValueRank: OneDimension
+      ArrayDimensions: [21]
+      Value: [{"TypeId":{"Id":7594},"Body":{"Value":0,"DisplayName":{"LocaleId":"","Text":"NotSupported"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":1,"DisplayName":{"LocaleId":"","Text":"StopFwUpdate"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":3,"DisplayName":{"LocaleId":"","Text":"StopSelfInitialization"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":4,"DisplayName":{"LocaleId":"","Text":"Stop"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":6,"DisplayName":{"LocaleId":"","Text":"Startup"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":8,"DisplayName":{"LocaleId":"","Text":"Run"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":9,"DisplayName":{"LocaleId":"","Text":"RunRedundant"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":10,"DisplayName":{"LocaleId":"","Text":"Halt"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":11,"DisplayName":{"LocaleId":"","Text":"LinkUpClassic"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":12,"DisplayName":{"LocaleId":"","Text":"UpdateClassic"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":13,"DisplayName":{"LocaleId":"","Text":"Defective"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":14,"DisplayName":{"LocaleId":"","Text":"ErrorSearch"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":15,"DisplayName":{"LocaleId":"","Text":"NoPower"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":16,"DisplayName":{"LocaleId":"","Text":"CiR"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":17,"DisplayName":{"LocaleId":"","Text":"STOPwithoutODIS"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":18,"DisplayName":{"LocaleId":"","Text":"RunODIS"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":19,"DisplayName":{"LocaleId":"","Text":"PgmTest"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":20,"DisplayName":{"LocaleId":"","Text":"RunPgmTest"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":21,"DisplayName":{"LocaleId":"","Text":"RunSyncUp"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":22,"DisplayName":{"LocaleId":"","Text":"SyncUp"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":31,"DisplayName":{"LocaleId":"","Text":"RemoteUnknown"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]
+  - Class: DataType
+    Name: SimaticRedundancyMode
+    Id: ns=28;i=3068
+    Supertype: Enumeration
+    EnumDefinition: 
+     {
+      "Name": "SimaticRedundancyMode",
+      "DataType": {
+       "Id": 3068,
+       "Namespace": 28
+      },
+      "Fields": [{
+        "Name": "NoPower",
+        "Value": 32,
+        "DisplayName": {
+         "LocaleId": "",
+         "Text": "NoPower"
+        }
+       },{
+        "Name": "Stop",
+        "Value": 33,
+        "DisplayName": {
+         "LocaleId": "",
+         "Text": "Stop"
+        }
+       },{
+        "Name": "Halt",
+        "Value": 34,
+        "DisplayName": {
+         "LocaleId": "",
+         "Text": "Halt"
+        }
+       },{
+        "Name": "Startup",
+        "Value": 35,
+        "DisplayName": {
+         "LocaleId": "",
+         "Text": "Startup"
+        }
+       },{
+        "Name": "Reserved",
+        "Value": 36,
+        "DisplayName": {
+         "LocaleId": "",
+         "Text": "Reserved"
+        }
+       },{
+        "Name": "Solo",
+        "Value": 37,
+        "DisplayName": {
+         "LocaleId": "",
+         "Text": "Solo"
+        }
+       },{
+        "Name": "Syncup",
+        "Value": 38,
+        "DisplayName": {
+         "LocaleId": "",
+         "Text": "Syncup"
+        }
+       },{
+        "Name": "PgmTest",
+        "Value": 39,
+        "DisplayName": {
+         "LocaleId": "",
+         "Text": "PgmTest"
+        }
+       },{
+        "Name": "Redundant",
+        "Value": 40,
+        "DisplayName": {
+         "LocaleId": "",
+         "Text": "Redundant"
+        }
+       }]
+     }
+    DisplayName: {"LocaleId":"","Text":"SimaticRedundancyMode"}
+    Children:
+    - Name: ns=0;EnumValues
+      Id: ns=28;i=6084
+      Type: PropertyType
+      DataType: EnumValueType
+      DisplayName: {"LocaleId":"","Text":"EnumValues"}
+      ValueRank: OneDimension
+      ArrayDimensions: [9]
+      Value: [{"TypeId":{"Id":7594},"Body":{"Value":32,"DisplayName":{"LocaleId":"","Text":"NoPower"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":33,"DisplayName":{"LocaleId":"","Text":"Stop"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":34,"DisplayName":{"LocaleId":"","Text":"Halt"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":35,"DisplayName":{"LocaleId":"","Text":"Startup"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":36,"DisplayName":{"LocaleId":"","Text":"Reserved"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":37,"DisplayName":{"LocaleId":"","Text":"Solo"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":38,"DisplayName":{"LocaleId":"","Text":"Syncup"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":39,"DisplayName":{"LocaleId":"","Text":"PgmTest"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":40,"DisplayName":{"LocaleId":"","Text":"Redundant"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]
+  - Name: SimaticDeviceType
+    Id: ns=28;i=1002
+    Supertype: DeviceType
+    DisplayName: {"LocaleId":"","Text":"SimaticDeviceType"}
+    Description: {"LocaleId":"","Text":"This type represents one simatic opcua device."}
+    Children:
+    - Name: ns=28;EngineeringRevision
+      Id: ns=28;i=6070
+      Type: PropertyType
+      DataType: String
+      DisplayName: {"LocaleId":"","Text":"EngineeringRevision"}
+      Description: {"LocaleId":"","Text":"Revision Level of the engineering environment."}
+    - Name: ns=28;OperatingMode
+      Id: ns=28;i=6071
+      Type: PropertyType
+      DataType: SimaticOperatingState
+      DisplayName: {"LocaleId":"","Text":"OperatingMode"}
+      Description: {"LocaleId":"","Text":"Shows the current operating state of your PLC."}
+      Value: 15
+    - Name: ns=28;OrderNumber
+      Id: ns=28;i=6072
+      Type: PropertyType
+      DataType: String
+      DisplayName: {"LocaleId":"","Text":"OrderNumber"}
+      Description: {"LocaleId":"","Text":"Article number of your device"}
+    - Name: ns=28;RedundancyMode
+      Id: ns=28;i=6073
+      Type: PropertyType
+      DataType: SimaticRedundancyMode
+      DisplayName: {"LocaleId":"","Text":"RedundancyMode"}
+      Description: {"LocaleId":"","Text":"Shows the system operating state of your S7 H system."}
+      ModellingRule: Optional
+      Value: 32
+    - Name: ns=0;Icon
+      Id: ns=28;i=5201
+      Type: PropertyType
+      DataType: ImagePNG
+      DisplayName: {"LocaleId":"","Text":"Icon"}
+      ModellingRule: Optional
+    - Name: ns=28;Counters
+      Id: ns=28;i=5062
+      Type: FunctionalGroupType
+      ModellingRule: Optional
+      DisplayName: {"LocaleId":"","Text":"Counters"}
+      Description: {"LocaleId":"","Text":"Holding all counters."}
+      Children:
+      - Name: ns=0;Icon
+        Id: ns=28;i=5204
+        Type: PropertyType
+        DataType: ImagePNG
+        DisplayName: {"LocaleId":"","Text":"Icon"}
+        ModellingRule: Optional
+    - Name: ns=28;DataBlocksGlobal
+      Id: ns=28;i=5063
+      Type: FunctionalGroupType
+      ModellingRule: Optional
+      DisplayName: {"LocaleId":"","Text":"DataBlocksGlobal"}
+      Description: {"LocaleId":"","Text":"Holding all global available datablocks."}
+      Children:
+      - Name: ns=0;Icon
+        Id: ns=28;i=5202
+        Type: PropertyType
+        DataType: ImagePNG
+        DisplayName: {"LocaleId":"","Text":"Icon"}
+        ModellingRule: Optional
+    - Name: ns=28;DataBlocksInstance
+      Id: ns=28;i=5064
+      Type: FunctionalGroupType
+      ModellingRule: Optional
+      DisplayName: {"LocaleId":"","Text":"DataBlocksInstance"}
+      Description: {"LocaleId":"","Text":"Holding all instance datablocks."}
+      Children:
+      - Name: ns=0;Icon
+        Id: ns=28;i=5203
+        Type: PropertyType
+        DataType: ImagePNG
+        DisplayName: {"LocaleId":"","Text":"Icon"}
+        ModellingRule: Optional
+    - Name: ns=28;Inputs
+      Id: ns=28;i=5059
+      Type: FunctionalGroupType
+      ModellingRule: Optional
+      DisplayName: {"LocaleId":"","Text":"Inputs"}
+      Description: {"LocaleId":"","Text":"Holding all global inputs."}
+    - Name: ns=28;Memory
+      Id: ns=28;i=5065
+      Type: FunctionalGroupType
+      ModellingRule: Optional
+      DisplayName: {"LocaleId":"","Text":"Memory"}
+      Description: {"LocaleId":"","Text":"Holding all global memory (bit, byte, words, ...)."}
+    - Name: ns=28;Outputs
+      Id: ns=28;i=5060
+      Type: FunctionalGroupType
+      ModellingRule: Optional
+      DisplayName: {"LocaleId":"","Text":"Outputs"}
+      Description: {"LocaleId":"","Text":"Holding all global outputs."}
+    - Name: ns=28;Timers
+      Id: ns=28;i=5061
+      Type: FunctionalGroupType
+      ModellingRule: Optional
+      DisplayName: {"LocaleId":"","Text":"Timers"}
+      Description: {"LocaleId":"","Text":"Holding all global timers."}
+- Name: Username
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "OpcUa_User"
+- Name: Password
+  Type: BaseDataVariableType
+  DataType: Password
+  Value: "OpcUa_Psw"
+- Name: ApplicationURI
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "urn:[Hostname]:FactoryTalkOptixHMI:FTOptixApplication"
+- Name: ApplicationName
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "FTOptixApplication@[Hostname]"
+- Name: ClientCertificateFile
+  Type: BaseDataVariableType
+  DataType: ResourceUri
+  Value: "ns=7;%PROJECTDIR%/PKI/Own/Certs/optixhmi_cert5.der"
+- Name: ClientPrivateKeyFile
+  Type: BaseDataVariableType
+  DataType: ResourceUri
+  Value: "ns=7;%PROJECTDIR%/PKI/Own/Certs/optixhmi_cert5.pem"

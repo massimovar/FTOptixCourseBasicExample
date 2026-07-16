@@ -7,14 +7,17 @@ Children:
   Type: valve
   Children:
   - Name: on
+    Id: g=822e0a08179915a4cb273c82ba735fd6
     Type: BaseDataVariableType
     DataType: Boolean
     Value: true
   - Name: temperature
+    Id: g=0535c68b2759e21dd0d11aacfd7672a1
     Type: BaseDataVariableType
     DataType: Float
     Value: 10.0
   - Name: section
+    Id: g=c123744c1ea36efce08613925b9163df
     Type: BaseDataVariableType
     DataType: String
     Value: "0"
@@ -23,12 +26,15 @@ Children:
   Type: valve
   Children:
   - Name: on
+    Id: g=71d34953c69fd2524823fa44c743863f
     Type: BaseDataVariableType
     DataType: Boolean
   - Name: temperature
+    Id: g=aadf6709f413b3bc433fccf461a4a7b6
     Type: BaseDataVariableType
     DataType: Float
   - Name: section
+    Id: g=c67fc274a9dc921981585124c5335970
     Type: BaseDataVariableType
     DataType: String
     Value: "0"
@@ -37,12 +43,15 @@ Children:
   Type: valve
   Children:
   - Name: on
+    Id: g=36d0d459f6fac3e0182b464bbff66b3d
     Type: BaseDataVariableType
     DataType: Boolean
   - Name: temperature
+    Id: g=31997a5d262acaa753534553efb0866f
     Type: BaseDataVariableType
     DataType: Float
   - Name: section
+    Id: g=b47d8ecd2185e8b5b82be866a68474f8
     Type: BaseDataVariableType
     DataType: String
     Value: "0"
@@ -51,12 +60,15 @@ Children:
   Type: valve
   Children:
   - Name: on
+    Id: g=2a53eadb6d5a23a4297176319ac7e961
     Type: BaseDataVariableType
     DataType: Boolean
   - Name: temperature
+    Id: g=cc592012d21054b4a3b598e9a7cda03d
     Type: BaseDataVariableType
     DataType: Float
   - Name: section
+    Id: g=548ebbecbdb595b69f2be4c2a3f8b80f
     Type: BaseDataVariableType
     DataType: String
     Value: "0"
@@ -65,12 +77,15 @@ Children:
   Type: valve
   Children:
   - Name: on
+    Id: g=2e091e822a55e0917f70a00304660047
     Type: BaseDataVariableType
     DataType: Boolean
   - Name: temperature
+    Id: g=c3f77cf8b7cdc05a206b4df210d79675
     Type: BaseDataVariableType
     DataType: Float
   - Name: section
+    Id: g=07be33112286938b05d542fdafae0e87
     Type: BaseDataVariableType
     DataType: String
     Value: "0"

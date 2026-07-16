@@ -1,7 +1,9 @@
 Name: Model
+Id: g=1fe38b1b42cb6d028b027b5bf2261c52
 Type: ModelCategoryFolder
 Children:
 - Name: Variable1
+  Id: g=fbaced85aefc1ed35e90b2f8a0b2b1c8
   Type: BaseDataVariableType
   DataType: Boolean
 - Name: Variable2
@@ -9,6 +11,7 @@ Children:
   Type: BaseDataVariableType
   DataType: Int32
 - Name: result
+  Id: g=c87663a87108ac076f01c46f4494da4e
   Type: BaseDataVariableType
   DataType: Int32
 - File: Motors/Motors.yaml
@@ -18,16 +21,20 @@ Children:
   Supertype: BaseObjectType
   Children:
   - Name: on
+    Id: g=15df8f70f6ef9873823d78395da0b74f
     Type: BaseDataVariableType
     DataType: Boolean
   - Name: temperature
+    Id: g=5e7d6ca2373ccf84025cf4094970c5fb
     Type: BaseDataVariableType
     DataType: Float
   - Name: section
+    Id: g=4007b9e2ac03850d6ab978a2e66965a8
     Type: BaseDataVariableType
     DataType: String
     Value: "0"
 - Name: Variable3
+  Id: g=5fe0e4b13beaaef269c4921f3a84709e
   Type: BaseDataVariableType
   DataType: Int32
 - Name: Variable4
@@ -35,101 +42,129 @@ Children:
   Type: BaseDataVariableType
   DataType: Int32
 - Name: Variable3Changed
+  Id: g=5e3d80e14821d056d8486c5f5f8459ce
   Type: VariableChangedEventDispatcher
   Children:
   - Name: VariableNodePath
+    Id: g=3fb494f171ed56bd9e5e920366421186
     Type: BaseVariableType
     DataType: NodePath
     Value: "../Variable3"
   - Name: VariableValueChangedEventHandler1
+    Id: g=0731ace2047ea74956eea8ce746ee14e
     Type: EventHandler
     Children:
     - Name: ListenEventType
+      Id: g=02b9d6e93f4d57c1eef779665170635e
       Type: PropertyType
       DataType: NodeId
       Value: "/Types/EventTypes/BaseEventType/VariableConditionEvent/VariableValueChangedEvent"
     - Name: MethodsToCall
+      Id: g=394c9a1a6593c2b43e95849d9bc33e68
       Type: BaseObjectType
       Children:
       - Name: MethodContainer1
+        Id: g=8d346dbde8c777782cd3b2a648ad677b
         Type: BaseObjectType
         Children:
         - Name: ns=2;ObjectPointer
+          Id: g=7886a3d1c3d0c26e315f1758cbe82495
           Type: NodePointer
           DataType: NodeId
           Children:
           - Name: Kind
+            Id: g=f31aa94df1453335ee48ab7f88c29efb
             Type: PropertyType
             DataType: NodeId
             Value: "/Types/ObjectTypes/BaseObjectType"
           - Name: DynamicLink
+            Id: g=af53cf8da712576c797e7d48865747ee
             Type: DynamicLink
             DataType: NodePath
             Value: "../../../../../../../Commands/VariableCommands@NodeId"
             Children:
             - Name: Mode
+              Id: g=9c37e04f6f460d66a6ec0a5a79503fae
               Type: BaseVariableType
               DataType: DynamicLinkMode
               Value: 2
         - Name: ns=2;Method
+          Id: g=77b4295c5573d7796eb779b2fed3fcc6
           Type: BaseDataVariableType
           DataType: String
           Value: "Increment"
         - Name: InputArguments
+          Id: g=59e29a7be4cdc1f4bd020830aed046d1
           Type: BaseObjectType
           Children:
           - Name: VariableToModify
+            Id: g=f435f67981eee8c791409676df93aed7
             Type: BaseDataVariableType
             DataType: VariablePointer
             Description: {"NamespaceIndex":2,"TextId":"IncrementVariableToModifyDescription"}
             Value: "/Objects/FTOptixCourseBasicExample/Model/Variable4"
           - Name: Delta
+            Id: g=01b42e90bd7312ead55261773db90be5
             Type: BaseDataVariableType
             DataType: Float
             Description: {"NamespaceIndex":2,"TextId":"IncrementDeltaDescription"}
             Value: 1.0
           - Name: ArrayIndex
+            Id: g=dc79474480f7d5dddc72b7cd915b11a7
             Type: BaseDataVariableType
             DataType: UInt32
             Description: {"NamespaceIndex":2,"TextId":"IncrementArrayIndexDescription"}
             ValueRank: ScalarOrOneDimension
     - Name: EventArguments
+      Id: g=9789430bb64555748efb14a40ea8e30e
       Type: VariableValueChangedEvent
       Children:
       - Name: VariableNodeId
+        Id: g=7f42047a2e00bb7c99d1fc839895386d
         Type: BaseVariableType
         DataType: NodeId
       - Name: NewValue
+        Id: g=84c14245495e741addb518de1e791de8
         Type: BaseVariableType
         DataType: BaseDataType
       - Name: OldValue
+        Id: g=7751d0944dfbec0d09178372201af099
         Type: BaseVariableType
         DataType: BaseDataType
       - Name: EventId
+        Id: g=ecf338ea68d713a0fb2b171aad07738c
         Type: PropertyType
         DataType: ByteString
       - Name: EventType
+        Id: g=3bad9814c067b13e6febfc9b571e3200
         Type: PropertyType
         DataType: NodeId
       - Name: SourceNode
+        Id: g=5da0f755fc2361f4ed0084d452eb8154
         Type: PropertyType
         DataType: NodeId
       - Name: SourceName
+        Id: g=5ca64375f3468135d597504e48b1f427
         Type: PropertyType
         DataType: String
       - Name: Time
+        Id: g=29c02950504a2d3d9620c7c364a8280e
         Type: PropertyType
         DataType: UtcTime
       - Name: ReceiveTime
+        Id: g=5f7daa43f9cd5a5dbf2f855caa73433b
         Type: PropertyType
         DataType: UtcTime
       - Name: Message
+        Id: g=0d31f1b7994012e00ca1a4fe95ca58df
         Type: PropertyType
         DataType: LocalizedText
       - Name: Severity
+        Id: g=46f9454b0ee059a0b5feb52aa05bc093
         Type: PropertyType
         DataType: UInt16
 - Name: Variable5
+  Id: g=cc559232bec9ee67b9aa3f424bfd1e47
   Type: BaseDataVariableType
   DataType: Boolean
 - Name: Variable5Transitioned
@@ -137,13 +172,16 @@ Children:
   Type: VariableTransitionEventDispatcher
   Children:
   - Name: Value
+    Id: g=0d92dd828723c1853c252c8deb765ef4
     Type: BaseVariableType
     DataType: Double
     Value: 1.0
   - Name: Transition
+    Id: g=217c27c703a1ca1340209d81a89cc053
     Type: BaseVariableType
     DataType: VariableTransition
   - Name: VariableNodePath
+    Id: g=9beff30fba507204d8bf9ccea51a5c2c
     Type: BaseVariableType
     DataType: NodePath
     Value: "../Variable5"

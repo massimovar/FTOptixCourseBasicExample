@@ -3,472 +3,582 @@ Id: g=c6ebbf9db1fe6bb5864fb7b249d5b867
 Type: FolderType
 Children:
 - Name: Motori_1
+  Id: g=571205c5eb5b64f25e105ebec62419a9
   Type: BaseObjectType
   Children:
   - Name: Allarme
+    Id: g=7ab0cdb51628871b20549cdc645c4cc5
     Type: BaseDataVariableType
     DataType: Boolean
     Children:
     - Name: DynamicLink
+      Id: g=4f1bb64d5b27f45ae65e54729bb58f21
       Type: DynamicLink
       DataType: NodePath
       Value: "../../../../CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL/Motori/1/Allarme"
       Children:
       - Name: Mode
+        Id: g=902c234a08c30314456095283c49f6d9
         Type: BaseVariableType
         DataType: DynamicLinkMode
         Value: 2
   - Name: Cicli
+    Id: g=e74de20c5a856a56aed4ce0e2208ce2f
     Type: BaseDataVariableType
     DataType: Int16
     Children:
     - Name: DynamicLink
+      Id: g=005d8d965325133db9b5540075d37922
       Type: DynamicLink
       DataType: NodePath
       Value: "../../../../CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL/Motori/1/Cicli"
       Children:
       - Name: Mode
+        Id: g=092a2b0cfd478a319653a8f82388c941
         Type: BaseVariableType
         DataType: DynamicLinkMode
         Value: 2
   - Name: ComandoAccensione
+    Id: g=b6636683147a76196ef41f97f92c71a0
     Type: BaseDataVariableType
     DataType: Boolean
     Children:
     - Name: DynamicLink
+      Id: g=7a6c8625a6b57e34770f6ceef2c5e4bc
       Type: DynamicLink
       DataType: NodePath
       Value: "../../../../CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL/Motori/1/ComandoAccensione"
       Children:
       - Name: Mode
+        Id: g=a33122f6931eb67ef2d0fde215f2beb7
         Type: BaseVariableType
         DataType: DynamicLinkMode
         Value: 2
   - Name: Nome
+    Id: g=99b2c6130ed7a0995beda97c1a2e55a4
     Type: BaseDataVariableType
     DataType: String
     Children:
     - Name: DynamicLink
+      Id: g=1782e3d94f091914053d5149e5bd89f9
       Type: DynamicLink
       DataType: NodePath
       Value: "../../../../CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL/Motori/1/Nome"
       Children:
       - Name: Mode
+        Id: g=f70bbe15cdb4cf52f563693f927b7ccc
         Type: BaseVariableType
         DataType: DynamicLinkMode
         Value: 2
   - Name: Temperatura
+    Id: g=4a4b85f052b24ca52cd4569790547934
     Type: BaseDataVariableType
     DataType: Float
     Children:
     - Name: DynamicLink
+      Id: g=ca2e44b7b5c339872b083af97b22c141
       Type: DynamicLink
       DataType: NodePath
       Value: "../../../../CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL/Motori/1/Temperatura"
       Children:
       - Name: Mode
+        Id: g=c03c36b9427000ac801b05f7abc849c2
         Type: BaseVariableType
         DataType: DynamicLinkMode
         Value: 2
   - Name: TempoFunzionamento
+    Id: g=74819f22a1d745de1d039a64edf1533e
     Type: BaseDataVariableType
     DataType: Duration
     Children:
     - Name: DynamicLink
+      Id: g=addeb21bb2f2c0b1bc999983ee140379
       Type: DynamicLink
       DataType: NodePath
       Value: "../../../../CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL/Motori/1/TempoFunzionamento"
       Children:
       - Name: Mode
+        Id: g=80881398ce43247fb3b250f9d9e561db
         Type: BaseVariableType
         DataType: DynamicLinkMode
         Value: 2
   - Name: Acceso
+    Id: g=f6c575c5b62f5db362df52ef8f9036ed
     Type: BaseDataVariableType
     DataType: Boolean
     Children:
     - Name: DynamicLink
+      Id: g=ff587a97c718c662da3630079afce416
       Type: DynamicLink
       DataType: NodePath
       Value: "../../../../CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL/Motori/1/Acceso"
       Children:
       - Name: Mode
+        Id: g=7c3f7498313e80d04c6d16134aea6999
         Type: BaseVariableType
         DataType: DynamicLinkMode
         Value: 2
 - Name: Motori_3
+  Id: g=d45413a0301f26b561654c58a93309fd
   Type: BaseObjectType
   Children:
   - Name: Allarme
+    Id: g=47f8ca93bfadf29857bd8c228fe2834f
     Type: BaseDataVariableType
     DataType: Boolean
     Children:
     - Name: DynamicLink
+      Id: g=13fb78f8b512c1bc39af44cd371d9ff5
       Type: DynamicLink
       DataType: NodePath
       Value: "../../../../CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL/Motori/3/Allarme"
       Children:
       - Name: Mode
+        Id: g=c52ff8a6b3ca379bf7d2a30acf873095
         Type: BaseVariableType
         DataType: DynamicLinkMode
         Value: 2
   - Name: Cicli
+    Id: g=e5f92322ad2f661572420c1fb53ae951
     Type: BaseDataVariableType
     DataType: Int16
     Children:
     - Name: DynamicLink
+      Id: g=f37e6ea1a71d80b2d5a2f0de52cda816
       Type: DynamicLink
       DataType: NodePath
       Value: "../../../../CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL/Motori/3/Cicli"
       Children:
       - Name: Mode
+        Id: g=0123846880679949d072024a3aa32ed3
         Type: BaseVariableType
         DataType: DynamicLinkMode
         Value: 2
   - Name: ComandoAccensione
+    Id: g=d15820bb3fe4ec783a6ae88efd238f2c
     Type: BaseDataVariableType
     DataType: Boolean
     Children:
     - Name: DynamicLink
+      Id: g=a1b770dc8183a35f597cf015cfd16c77
       Type: DynamicLink
       DataType: NodePath
       Value: "../../../../CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL/Motori/3/ComandoAccensione"
       Children:
       - Name: Mode
+        Id: g=fbf9883f5940446dd17d9befd2e08737
         Type: BaseVariableType
         DataType: DynamicLinkMode
         Value: 2
   - Name: Nome
+    Id: g=24b38373f8315120d3d58fb2176d8ab9
     Type: BaseDataVariableType
     DataType: String
     Children:
     - Name: DynamicLink
+      Id: g=c08979299c89974251cb803973b3888b
       Type: DynamicLink
       DataType: NodePath
       Value: "../../../../CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL/Motori/3/Nome"
       Children:
       - Name: Mode
+        Id: g=784983dbe64fb5410696e284100b0b35
         Type: BaseVariableType
         DataType: DynamicLinkMode
         Value: 2
   - Name: Temperatura
+    Id: g=4d0221fbdab704534c7d5eb1da7a5c11
     Type: BaseDataVariableType
     DataType: Float
     Children:
     - Name: DynamicLink
+      Id: g=b41efcc2dfd711b4a4d6ddf90ec4dff2
       Type: DynamicLink
       DataType: NodePath
       Value: "../../../../CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL/Motori/3/Temperatura"
       Children:
       - Name: Mode
+        Id: g=61d31b3652fc60d3511f34e1b7587276
         Type: BaseVariableType
         DataType: DynamicLinkMode
         Value: 2
   - Name: TempoFunzionamento
+    Id: g=faada7f195ee94e115f29baff5de4376
     Type: BaseDataVariableType
     DataType: Duration
     Children:
     - Name: DynamicLink
+      Id: g=93c4caba4225545ae222ace92b59776f
       Type: DynamicLink
       DataType: NodePath
       Value: "../../../../CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL/Motori/3/TempoFunzionamento"
       Children:
       - Name: Mode
+        Id: g=6990c8d8164fbea1197bf843fc1fb410
         Type: BaseVariableType
         DataType: DynamicLinkMode
         Value: 2
   - Name: Acceso
+    Id: g=b6f66be6bfd514a6096f605d06b0a9a5
     Type: BaseDataVariableType
     DataType: Boolean
     Children:
     - Name: DynamicLink
+      Id: g=f7ae6918aa8651d3d926100199b7f119
       Type: DynamicLink
       DataType: NodePath
       Value: "../../../../CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL/Motori/3/Acceso"
       Children:
       - Name: Mode
+        Id: g=4fad640758fcfc53bbeda98e39c8afd8
         Type: BaseVariableType
         DataType: DynamicLinkMode
         Value: 2
 - Name: Motori_4
+  Id: g=7d1215fcc369ccf479612e1623749b62
   Type: BaseObjectType
   Children:
   - Name: Allarme
+    Id: g=6fb3abe59f7acae37602432ce87a8ac9
     Type: BaseDataVariableType
     DataType: Boolean
     Children:
     - Name: DynamicLink
+      Id: g=56ee1e4808e9caae6cb44c85c7c5e318
       Type: DynamicLink
       DataType: NodePath
       Value: "../../../../CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL/Motori/4/Allarme"
       Children:
       - Name: Mode
+        Id: g=a938df5ef681dda60df9a31dfc8ef5dc
         Type: BaseVariableType
         DataType: DynamicLinkMode
         Value: 2
   - Name: Cicli
+    Id: g=710a5dbac30397a527913f51bb1d9b37
     Type: BaseDataVariableType
     DataType: Int16
     Children:
     - Name: DynamicLink
+      Id: g=930ce1c3af96f0cea03c5fcfecefe63e
       Type: DynamicLink
       DataType: NodePath
       Value: "../../../../CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL/Motori/4/Cicli"
       Children:
       - Name: Mode
+        Id: g=f081252d1bb4ba7cf7e4951de4f16e2b
         Type: BaseVariableType
         DataType: DynamicLinkMode
         Value: 2
   - Name: ComandoAccensione
+    Id: g=6c00c22aa27c9adf62d7517befea5f8c
     Type: BaseDataVariableType
     DataType: Boolean
     Children:
     - Name: DynamicLink
+      Id: g=5dca75a27207a5754e920cf74960da0c
       Type: DynamicLink
       DataType: NodePath
       Value: "../../../../CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL/Motori/4/ComandoAccensione"
       Children:
       - Name: Mode
+        Id: g=18d640a28dc9cab99f4aeb8354a2ba64
         Type: BaseVariableType
         DataType: DynamicLinkMode
         Value: 2
   - Name: Nome
+    Id: g=e1cd81981a000934ba3c21fb0493c78c
     Type: BaseDataVariableType
     DataType: String
     Children:
     - Name: DynamicLink
+      Id: g=645461b183193e28c320534919879175
       Type: DynamicLink
       DataType: NodePath
       Value: "../../../../CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL/Motori/4/Nome"
       Children:
       - Name: Mode
+        Id: g=0eca82aa62b18d58052cad60b2178ec9
         Type: BaseVariableType
         DataType: DynamicLinkMode
         Value: 2
   - Name: Temperatura
+    Id: g=0917353585ed7e21f7f92ee0cbbba9b1
     Type: BaseDataVariableType
     DataType: Float
     Children:
     - Name: DynamicLink
+      Id: g=c473221b9ac39da121fcbbc53d6ac05d
       Type: DynamicLink
       DataType: NodePath
       Value: "../../../../CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL/Motori/4/Temperatura"
       Children:
       - Name: Mode
+        Id: g=d02bed263f71257d733c846f451de19e
         Type: BaseVariableType
         DataType: DynamicLinkMode
         Value: 2
   - Name: TempoFunzionamento
+    Id: g=4b209b943650682b08a4ef843ee7b746
     Type: BaseDataVariableType
     DataType: Duration
     Children:
     - Name: DynamicLink
+      Id: g=ee93e2437b299ff9b3d4fa0ca10f8443
       Type: DynamicLink
       DataType: NodePath
       Value: "../../../../CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL/Motori/4/TempoFunzionamento"
       Children:
       - Name: Mode
+        Id: g=d9f24960a6096e726f3d17f69aeb282c
         Type: BaseVariableType
         DataType: DynamicLinkMode
         Value: 2
   - Name: Acceso
+    Id: g=ec8865db8e01cac42479cad7ad483c34
     Type: BaseDataVariableType
     DataType: Boolean
     Children:
     - Name: DynamicLink
+      Id: g=3c88e673e4a66ebe2c35e3362e998cc8
       Type: DynamicLink
       DataType: NodePath
       Value: "../../../../CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL/Motori/4/Acceso"
       Children:
       - Name: Mode
+        Id: g=622f47b2bd82ed77a85b6fa91b6aa3dc
         Type: BaseVariableType
         DataType: DynamicLinkMode
         Value: 2
 - Name: Motori_5
+  Id: g=e2486756abf32c50af41a0a3362b18e5
   Type: BaseObjectType
   Children:
   - Name: Allarme
+    Id: g=8111d91fa501401e30ae89a14a51d32e
     Type: BaseDataVariableType
     DataType: Boolean
     Children:
     - Name: DynamicLink
+      Id: g=48379bf4c501193c3059cdae5d8025b1
       Type: DynamicLink
       DataType: NodePath
       Value: "../../../../CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL/Motori/5/Allarme"
       Children:
       - Name: Mode
+        Id: g=7e0bd921d21f86b04e0b253eb380f447
         Type: BaseVariableType
         DataType: DynamicLinkMode
         Value: 2
   - Name: Cicli
+    Id: g=ac34e6344ceab5b2ca438f8e8450fe11
     Type: BaseDataVariableType
     DataType: Int16
     Children:
     - Name: DynamicLink
+      Id: g=6f25cdc4aeaaea0a898dccf4c4f82c02
       Type: DynamicLink
       DataType: NodePath
       Value: "../../../../CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL/Motori/5/Cicli"
       Children:
       - Name: Mode
+        Id: g=80bcb23c21bd29b7d17483a023c06966
         Type: BaseVariableType
         DataType: DynamicLinkMode
         Value: 2
   - Name: ComandoAccensione
+    Id: g=d3669f36a5348897681d5799f4c4e33f
     Type: BaseDataVariableType
     DataType: Boolean
     Children:
     - Name: DynamicLink
+      Id: g=0ab92f1eaa5466a7a42b674ef83b9de3
       Type: DynamicLink
       DataType: NodePath
       Value: "../../../../CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL/Motori/5/ComandoAccensione"
       Children:
       - Name: Mode
+        Id: g=1d5ed0fce14943e0202a1d1ae9d04353
         Type: BaseVariableType
         DataType: DynamicLinkMode
         Value: 2
   - Name: Nome
+    Id: g=bd21e8a8265685f351cb50e347913ec4
     Type: BaseDataVariableType
     DataType: String
     Children:
     - Name: DynamicLink
+      Id: g=796d971a0ce298cc729c572442975f6e
       Type: DynamicLink
       DataType: NodePath
       Value: "../../../../CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL/Motori/5/Nome"
       Children:
       - Name: Mode
+        Id: g=fd0b25a29c35873235d7c5e088ee99cd
         Type: BaseVariableType
         DataType: DynamicLinkMode
         Value: 2
   - Name: Temperatura
+    Id: g=9adc494f70fa9646dfb7b3635023fb16
     Type: BaseDataVariableType
     DataType: Float
     Children:
     - Name: DynamicLink
+      Id: g=bac8c70808630b1db6ff61b9ad2edcf5
       Type: DynamicLink
       DataType: NodePath
       Value: "../../../../CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL/Motori/5/Temperatura"
       Children:
       - Name: Mode
+        Id: g=8f3ddfe26513f25030eb1f8a283624d8
         Type: BaseVariableType
         DataType: DynamicLinkMode
         Value: 2
   - Name: TempoFunzionamento
+    Id: g=ba71edb481b3c89c9f9232942ffacac2
     Type: BaseDataVariableType
     DataType: Duration
     Children:
     - Name: DynamicLink
+      Id: g=b1dfeb1b307f0545c6eadbb836f72718
       Type: DynamicLink
       DataType: NodePath
       Value: "../../../../CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL/Motori/5/TempoFunzionamento"
       Children:
       - Name: Mode
+        Id: g=b60cf0a8a889f04cf003ab5faceef985
         Type: BaseVariableType
         DataType: DynamicLinkMode
         Value: 2
   - Name: Acceso
+    Id: g=576b89d898adfc04266d9188ae3374ee
     Type: BaseDataVariableType
     DataType: Boolean
     Children:
     - Name: DynamicLink
+      Id: g=6a10204714050c5b6e51cc985c31c57a
       Type: DynamicLink
       DataType: NodePath
       Value: "../../../../CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL/Motori/5/Acceso"
       Children:
       - Name: Mode
+        Id: g=f9e0fd8af2f02a542f09e0e9fe165b26
         Type: BaseVariableType
         DataType: DynamicLinkMode
         Value: 2
 - Name: Motori_2
+  Id: g=d57fa9010da1d96f2ac89951bd880514
   Type: BaseObjectType
   Children:
   - Name: Acceso
+    Id: g=8b26b7885a3e95e17ee3d015b61ddd68
     Type: BaseDataVariableType
     DataType: Boolean
     Children:
     - Name: DynamicLink
+      Id: g=5f55d7cbe6dc37d77e1a148426cf058f
       Type: DynamicLink
       DataType: NodePath
       Value: "../../../../CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL/Motori/2/Acceso"
       Children:
       - Name: Mode
+        Id: g=29a0ef74a687669bb9acdde2cade33f9
         Type: BaseVariableType
         DataType: DynamicLinkMode
         Value: 2
   - Name: Allarme
+    Id: g=e55dff112548b6b2c3ecc84aded770e6
     Type: BaseDataVariableType
     DataType: Boolean
     Children:
     - Name: DynamicLink
+      Id: g=06c65d7146bdeb0a50241e3763f9723a
       Type: DynamicLink
       DataType: NodePath
       Value: "../../../../CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL/Motori/2/Allarme"
       Children:
       - Name: Mode
+        Id: g=e9acaa24cff2dc9c5aed833f75ed3b1f
         Type: BaseVariableType
         DataType: DynamicLinkMode
         Value: 2
   - Name: Cicli
+    Id: g=304b17f3d119aa655f73ad46f72a5ef6
     Type: BaseDataVariableType
     DataType: Int16
     Children:
     - Name: DynamicLink
+      Id: g=f4b43d7fca3ccb86bce451063ad8629c
       Type: DynamicLink
       DataType: NodePath
       Value: "../../../../CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL/Motori/2/Cicli"
       Children:
       - Name: Mode
+        Id: g=837fe3b91b79281ef55d358848f006f0
         Type: BaseVariableType
         DataType: DynamicLinkMode
         Value: 2
   - Name: ComandoAccensione
+    Id: g=7c8d67334a88c91eadc6088d1dde708f
     Type: BaseDataVariableType
     DataType: Boolean
     Children:
     - Name: DynamicLink
+      Id: g=eeb7fb1955731bea0cfdcb715142b023
       Type: DynamicLink
       DataType: NodePath
       Value: "../../../../CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL/Motori/2/ComandoAccensione"
       Children:
       - Name: Mode
+        Id: g=64c671518a38b86c4fe71f854e8dfe4b
         Type: BaseVariableType
         DataType: DynamicLinkMode
         Value: 2
   - Name: Nome
+    Id: g=cf85bab822ce8442ae45444c7d7841bd
     Type: BaseDataVariableType
     DataType: String
     Children:
     - Name: DynamicLink
+      Id: g=dbf66d02e4751eb3ad878060cbb998f4
       Type: DynamicLink
       DataType: NodePath
       Value: "../../../../CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL/Motori/2/Nome"
       Children:
       - Name: Mode
+        Id: g=09a7c2de3598938df44ddc3c59e2c1a8
         Type: BaseVariableType
         DataType: DynamicLinkMode
         Value: 2
   - Name: Temperatura
+    Id: g=58f16210640dae360a2781c59e95d97d
     Type: BaseDataVariableType
     DataType: Float
     Children:
     - Name: DynamicLink
+      Id: g=6555579da76d2028edd038345353fcc7
       Type: DynamicLink
       DataType: NodePath
       Value: "../../../../CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL/Motori/2/Temperatura"
       Children:
       - Name: Mode
+        Id: g=330e5e5629c99c55d01fc78981637e25
         Type: BaseVariableType
         DataType: DynamicLinkMode
         Value: 2
   - Name: TempoFunzionamento
+    Id: g=e38f4409dedc7031f1bcc428adde13bb
     Type: BaseDataVariableType
     DataType: Duration
     Children:
     - Name: DynamicLink
+      Id: g=836cb78c1701b717667b271df509be1f
       Type: DynamicLink
       DataType: NodePath
       Value: "../../../../CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL/Motori/2/TempoFunzionamento"
       Children:
       - Name: Mode
+        Id: g=9449cf014321f918ceee2e5933f5f4ce
         Type: BaseVariableType
         DataType: DynamicLinkMode
         Value: 2

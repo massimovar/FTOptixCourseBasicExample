@@ -90,16 +90,38 @@ Project:
    Uri: 'urn:FTOptix:S7TiaProfinet:Net'
    Module: FTOptix.S7TiaProfinet.Net
    Version: 1.2
+  23:
+   Uri: 'urn:FTOptix:OPCUAServer'
+   Module: FTOptix.OPCUAServer
+   Version: 2.0
+  24:
+   Uri: 'urn:FTOptix:OPCUAServer:Net'
+   Module: FTOptix.OPCUAServer.Net
+   Version: 2.0
+  25:
+   Uri: 'urn:FTOptix:OPCUAClient'
+   Module: FTOptix.OPCUAClient
+   Version: 2.0
+  26:
+   Uri: 'urn:FTOptix:OPCUAClient:Net'
+   Module: FTOptix.OPCUAClient.Net
+   Version: 1.2
+  27:
+   Uri: 'http://opcfoundation.org/UA/DI/'
+   CompanionSpecification: 1
+  28:
+   Uri: 'b0560409ffeaf6e1516d3c2b8716f95c#http://www.siemens.com/simatic-s7-opcua'
+   ServerUri: b0560409ffeaf6e1516d3c2b8716f95c
  Statistics:
-  TotalNodeCount: 1236
-  Objects: 260
-  ObjectTypes: 8
-  Variables: 967
+  TotalNodeCount: 1293
+  Objects: 277
+  ObjectTypes: 9
+  Variables: 1004
   VariableTypes: 0
-  DataTypes: 0
+  DataTypes: 2
   Methods: 1
-  References: 22
+  References: 31
   ReferenceTypes: 0
-  Files: 35
+  Files: 36
  Nodes:
  - File: Nodes/FTOptixCourseBasicExample.yaml

@@ -36,17 +36,25 @@ Project:
    Uri: 'urn:FTOptix:NetLogic'
    Module: FTOptix.NetLogic
    Version: 4.0
+  10:
+   Uri: 'urn:FTOptix:OPCUAImporter'
+   Module: FTOptix.OPCUAImporter
+   Version: 1.0
+  11:
+   Uri: 'http://opcfoundation.org/UA/DI/'
+   CompanionSpecification: 1
  Statistics:
-  TotalNodeCount: 7
-  Objects: 2
+  TotalNodeCount: 11
+  Objects: 3
   ObjectTypes: 0
-  Variables: 5
+  Variables: 8
   VariableTypes: 0
   DataTypes: 0
   Methods: 0
   References: 0
   ReferenceTypes: 0
-  Files: 2
+  Files: 3
  Nodes:
  - File: DesignTimeNodes/CommDrivers/CODESYSDriver1/CODESYSStation1/TagImporter.yaml
  - File: DesignTimeNodes/CommDrivers/S7TIAPROFINETDriver1/S7TIAPROFINETStation1/TagImporter.yaml
+ - File: 'DesignTimeNodes/OPC-UA/OPCUAClient1/OPCUATagImporter.yaml'

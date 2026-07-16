@@ -8,6 +8,7 @@ using FTOptix.NetLogic;
 using System.Linq;
 using UAManagedCore;
 using FTOptix.OPCUAClient;
+using FTOptix.OPCUAServer;
 
 #endregion
 
