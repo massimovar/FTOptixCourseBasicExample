@@ -113,10 +113,10 @@ Project:
    Uri: 'b0560409ffeaf6e1516d3c2b8716f95c#http://www.siemens.com/simatic-s7-opcua'
    ServerUri: b0560409ffeaf6e1516d3c2b8716f95c
  Statistics:
-  TotalNodeCount: 1835
-  Objects: 387
+  TotalNodeCount: 1896
+  Objects: 400
   ObjectTypes: 18
-  Variables: 1420
+  Variables: 1468
   VariableTypes: 0
   DataTypes: 2
   Methods: 8
