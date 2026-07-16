@@ -9,8 +9,92 @@ Children:
   Value: 
    {
     "Type": 12,
-    "Dimensions": [1,2],
+    "Dimensions": [22,3],
     "Body": [
-     "","en-US"
+     "","en-US","it-IT",
+     "Old password","Old password","",
+     "LoginFormPasswordExpired","Password expired","",
+     "Login","Login","",
+     "New password","New password","",
+     "Password","Password","",
+     "Confirm password","Confirm password","",
+     "Change password","Change password","",
+     "Your password is expired. Please enter a new one","Your password is expired.\nPlease enter a new one.","",
+     "Current User:","Current User:","",
+     "Logout","Logout","",
+     "ChangePasswordFormSuccessMessage","Password changed successfully","",
+     "ChangePasswordFormWrongOldPasswordMessage","Wrong old password","",
+     "ChangePasswordFormPasswordAlreadyUsedMessage","Password already used","",
+     "ChangePasswordFormPasswordChangedTooRecentlyMessage","Password changed too recently","",
+     "ChangePasswordFormPasswordTooShortMessage","Password too short","",
+     "ChangePasswordFormUserNotFoundMessage","User not found","",
+     "ChangePasswordFormUnsupportedOperationMessage","Unsupported operation","",
+     "ChangePasswordFormPasswordMismatchMessage","Passwords do not match","",
+     "LoginFormLoginSuccessful","Login successful","",
+     "LoginFormAuthenticationFailed","Authentication failed","",
+     "LoginFormInvalidAuthenticationModeForUser","Invalid authentication mode for user",""
     ]
    }
+- Name: AlarmsMessages
+  Id: g=7bfb98936f2ef496ae20d6aaa18d3d61
+  Type: LocalizationDictionary
+  DataType: String
+  ValueRank: OneOrMoreDimensions
+  ArrayDimensions: [0,0]
+  Value: 
+   {
+    "Type": 12,
+    "Dimensions": [2,3],
+    "Body": [
+     "","en-US","it-IT",
+     "hi","Hi!","Ciao!"
+    ]
+   }
+- Name: ImportAndExportTranslations
+  Type: NetLogic
+  WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
+  Children:
+  - Name: BehaviourStartPriority
+    Type: BehaviourStartPriorityVariableType
+    DataType: Byte
+    Value: 180
+  - Name: CSVPath
+    Type: BaseDataVariableType
+    DataType: AbsoluteResourceUri
+    Value: "file:///C:/temp/alarms_transaltions.csv"
+  - Class: Method
+    Name: ExportTranslations
+  - Class: Method
+    Name: ImportTranslations
+  - Name: CharacterSeparator
+    Type: BaseDataVariableType
+    DataType: String
+    Value: ";"
+  - Name: WrapFields
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: LocalizationDictionary
+    Type: NodePointer
+    DataType: NodeId
+    Value: "/Objects/FTOptixCourseBasicExample/Translations/AlarmsMessages"
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Types/VariableTypes/BaseVariableType/LocalizationDictionary"
+  - Name: ns=4;LibraryReference
+    Type: ObjectLibraryReference
+    DataType: ObjectLibraryReferenceDataType
+    Value: 
+     {
+      "TypeId": {
+       "Id": 72,
+       "Namespace": 4
+      },
+      "Body": {
+       "libraryGuid": "f0701375ee41467993d632db6a8fdaa5",
+       "objectGuid": "e7cab90d0ab7e8b5b02218e38bca9a0e",
+       "objectVersion": 1,
+       "highestIgnoredVersion": 0
+      }
+     }

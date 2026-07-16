@@ -113,15 +113,15 @@ Project:
    Uri: 'b0560409ffeaf6e1516d3c2b8716f95c#http://www.siemens.com/simatic-s7-opcua'
    ServerUri: b0560409ffeaf6e1516d3c2b8716f95c
  Statistics:
-  TotalNodeCount: 1293
-  Objects: 277
-  ObjectTypes: 9
-  Variables: 1004
+  TotalNodeCount: 1835
+  Objects: 387
+  ObjectTypes: 18
+  Variables: 1420
   VariableTypes: 0
   DataTypes: 2
-  Methods: 1
-  References: 31
+  Methods: 8
+  References: 42
   ReferenceTypes: 0
-  Files: 36
+  Files: 38
  Nodes:
  - File: Nodes/FTOptixCourseBasicExample.yaml
